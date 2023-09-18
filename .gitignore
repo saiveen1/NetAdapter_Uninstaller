@@ -144,6 +144,8 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+rt640x64.inf
+rt640x64.sys
 /install
 /.idea
 # PyCharm
