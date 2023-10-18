@@ -45,6 +45,7 @@ def remove_net_adapters():
 
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for net_adapter in del_net_adapters:
+            # 异步执行uninstall_hwd， get_real_device_id为参数
             future = executor.submit(uninstall_hwd, get_real_device_id(net_adapter.PNPDeviceID))
             futures.append(future)
 
